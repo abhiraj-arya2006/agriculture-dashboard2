@@ -538,7 +538,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex transition-colors duration-300">
+    <div className="fixed inset-0 bg-gray-50 flex transition-colors duration-300">
       {/* Sidebar */}
       <div className={`${sidebarOpen ? 'w-64' : 'w-16'} transition-all duration-300 bg-white shadow-xl border-r border-gray-200 flex flex-col`}>
         <div className="p-6 border-b border-gray-200">
@@ -599,9 +599,9 @@ const App = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col min-h-0">
         {/* Top Navigation */}
-        <header className="bg-white shadow-sm border-b border-gray-200 px-8 py-6 transition-colors duration-300">
+        <header className="bg-white shadow-sm border-b border-gray-200 px-8 py-6 transition-colors duration-300 flex-shrink-0">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-3xl font-bold text-gray-900">Smart Agriculture Dashboard</h2>
@@ -701,7 +701,7 @@ const App = () => {
         </header>
 
         {/* Dashboard Content */}
-        <main className="flex-1 p-8 overflow-auto bg-gray-50 transition-colors duration-300">
+        <main className="flex-1 p-8 overflow-y-auto bg-gray-50 transition-colors duration-300 min-h-0">
           <StatsCards />
           
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mb-8">
