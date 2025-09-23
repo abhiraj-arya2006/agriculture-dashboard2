@@ -549,7 +549,7 @@ const App = () => {
                   <Leaf className="w-6 h-6 text-white" />
                 </div>
                 <h1 className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
-                  AgriMonitor Pro
+                  AgriMonitor 
                 </h1>
               </div>
             )}
