@@ -604,7 +604,7 @@ const App = () => {
         <header className="bg-white shadow-sm border-b border-gray-200 px-8 py-6 transition-colors duration-300 flex-shrink-0">
           <div className="flex items-center justify-between">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900">Smart Agriculture Dashboard</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Agriculture Dashboard</h2>
               <p className="text-base text-gray-600 mt-2 font-medium">AI-powered precision agriculture monitoring and analytics platform</p>
             </div>
             
