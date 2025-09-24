@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 import './App.css';
 
 function App() {
-  const { isAuthenticated = false, loading = false } = useAuth() || {};
+  const { loading = false } = useAuth() || {};
 
   if (loading) {
     return (
@@ -19,19 +19,19 @@ function App() {
       <Routes>
         <Route 
           path="/" 
-          element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <AuthPage />} 
+          element={<Navigate to="/dashboard" replace />} 
         />
         <Route 
           path="/auth" 
-          element={!isAuthenticated ? <AuthPage /> : <Navigate to="/dashboard" replace />} 
+          element={<AuthPage />} 
         />
         <Route 
           path="/dashboard" 
-          element={isAuthenticated ? <Dashboard /> : <Navigate to="/auth" replace />} 
+          element={<Dashboard />} 
         />
         <Route 
           path="*" 
-          element={<Navigate to="/" replace />} 
+          element={<Navigate to="/dashboard" replace />} 
         />
       </Routes>
     </div>
